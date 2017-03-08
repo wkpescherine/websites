@@ -1,0 +1,89 @@
+.navbar-text > a{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.navbar-inverse .navbar-brand {
+	color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover{
+	color: #ffff00;
+	background: transparent;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus{
+	color: #000;
+	background: #ff0000;
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus{
+	background: #008000;
+}
+
+body {
+	padding: 0px;
+}
+
+h3 {
+	margin-top: 0px;
+	margin-bottom: 5px;
+	padding-top:0px;
+	padding-bottom: 0px;
+}
+
+h1 {
+	font-siez: 32px;
+	font-color: #000000;
+}
+
+p {
+	font-size: 12px;
+}
+
+.carousel-inner .item {
+	text-align: center !important;
+}
+@media (max-width: 570px) {
+	.carousel-control.left {
+		left: 0;
+	}
+	.carousel-control.right {
+		right: 0;
+	}
+}
+
+.carousel.carousel-fade .item {
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-ms-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+	opacity:0;
+}
+
+.carousel.carousel-fade .active.item {
+	opacity:1;
+}
+
+.carousel.carousel-fade .active.left,
+.carousel.carousel-fade .active.right {
+	left: 0;
+	z-index: 2;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.carousel.carousel-fade .next,
+.carousel.carousel-fade .prev {
+	left: 0;
+	z-index: 1;
+}
